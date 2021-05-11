@@ -101,7 +101,7 @@ npm run serve
 
 You should then see a message similar to the one below:
 
-![npm run](/packages/Cognito-javascript-workshop/blobs/mainline/--/images/npm-run.png?raw=1)
+![npm run](images/home-page.png)
 
 If you would like to stop the development server press "control+C"
 
@@ -109,4 +109,4 @@ If you would like to stop the development server press "control+C"
 
 Now navigate to the URL that is displayed in your terminal window where it says your **"App running at"**, and you should see the screen below.
 
-![home page](/packages/Cognito-javascript-workshop/blobs/mainline/--/images/home-page.png?raw=1)
+![home page](/images/home-page.png)
