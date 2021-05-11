@@ -101,7 +101,7 @@ npm run serve
 
 You should then see a message similar to the one below:
 
-![npm run](images/home-page.png)
+![npm run](images/npm-run.png)
 
 If you would like to stop the development server press "control+C"
 
