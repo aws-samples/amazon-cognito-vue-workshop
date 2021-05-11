@@ -1,3 +1,7 @@
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
 export default {
   cognitoUserName(state) {
     return state.cognitoUserName;
@@ -25,5 +29,5 @@ export default {
   },
   didAutoLogout(state) {
     return state.didAutoLogout;
-  }
+  },
 };

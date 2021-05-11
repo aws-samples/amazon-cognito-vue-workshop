@@ -1,3 +1,7 @@
+<!-- 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0 
+-->
 <template>
   <!-- Base card component used throughout UI -->
   <div class="card shadow p-3 mb-5 bg-body">

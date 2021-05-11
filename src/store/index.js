@@ -1,3 +1,7 @@
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
 import { createStore } from "vuex";
 import authModule from "./auth/index";
 import settingsModule from "./settings/index";
@@ -6,27 +10,27 @@ import contactsModule from "./contacts/index";
 export default createStore({
   state() {
     return {
-      isLoading: false
+      isLoading: false,
     };
   },
   mutations: {
     setIsLoading(state, payload) {
       state.isLoading = payload;
-    }
+    },
   },
   actions: {
     setIsLoading(context, payload) {
       context.commit("setIsLoading", payload);
-    }
+    },
   },
   modules: {
     authModule,
     settingsModule,
-    contactsModule
+    contactsModule,
   },
   getters: {
     getIsLoading(state) {
       return state.isLoading;
-    }
-  }
+    },
+  },
 });

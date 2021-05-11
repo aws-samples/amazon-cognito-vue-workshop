@@ -1,4 +1,9 @@
-/* 
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
+
+/*
     Simple form validation methods
     More robust form validation can be implemented using a library such as Vuelidate (https://vuelidate.js.org/)
 */
@@ -14,7 +19,7 @@ export function validateAddContactForm(formData) {
   ) {
     return {
       valid: false,
-      message: "All form fields are required"
+      message: "All form fields are required",
     };
   }
 
@@ -34,7 +39,7 @@ export function validataEditContactForm(formData) {
   ) {
     return {
       valid: false,
-      message: "All form fields are required"
+      message: "All form fields are required",
     };
   }
 
@@ -45,7 +50,7 @@ export function validateSignInForm(formData) {
   if (formData.username === "" || formData.password === "") {
     return {
       valid: false,
-      message: "Username and password field must be filled in."
+      message: "Username and password field must be filled in.",
     };
   }
   return { valid: true };
@@ -60,12 +65,12 @@ export function validateSignUpForm(formData) {
   ) {
     return {
       valid: false,
-      message: "All form fields are required"
+      message: "All form fields are required",
     };
   } else if (formData.confirm_password !== formData.password) {
     return {
       valid: false,
-      message: "Passwords fields don't match"
+      message: "Passwords fields don't match",
     };
   }
 
@@ -76,7 +81,7 @@ export function validateConfirmationForm(formData) {
   if (formData.username === "" || formData.code === "") {
     return {
       valid: false,
-      message: "Username and confirmation code must be filled in."
+      message: "Username and confirmation code must be filled in.",
     };
   }
 
@@ -87,7 +92,7 @@ export function validateForgotPasswordForm(formData) {
   if (formData.username === "") {
     return {
       valid: false,
-      message: "Missing Username"
+      message: "Missing Username",
     };
   }
 
@@ -102,12 +107,12 @@ export function validateResetPasswordForm(formData) {
   ) {
     return {
       valid: false,
-      message: "All fields must be filled in"
+      message: "All fields must be filled in",
     };
   } else if (formData.password !== formData.confirmPassword) {
     return {
       valid: false,
-      message: "Passwords fields don't match"
+      message: "Passwords fields don't match",
     };
   }
 

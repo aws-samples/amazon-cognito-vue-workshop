@@ -1,3 +1,7 @@
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
 export default {
   setAutoLogout(state) {
     state.didAutoLogout = true;
@@ -22,5 +26,5 @@ export default {
   },
   setSession(state, payload) {
     state.session = payload;
-  }
+  },
 };

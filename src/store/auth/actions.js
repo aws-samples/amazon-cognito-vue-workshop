@@ -1,10 +1,15 @@
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
+
 //timeout in seconds
 let seconds_timeout = 3600;
 
 import {
   CognitoUserPool,
   CognitoUser,
-  AuthenticationDetails
+  AuthenticationDetails,
 } from "amazon-cognito-identity-js";
 
 //imports userpool data from config
@@ -37,7 +42,7 @@ export default {
     const userPool = new CognitoUserPool(POOL_DATA);
     const userData = {
       Username: payload.email,
-      Pool: userPool
+      Pool: userPool,
     };
 
     // creates a Cognito User object based on username and user pool info
@@ -60,14 +65,14 @@ export default {
     //gets up Cognito authentication data from state
     const authData = {
       Username: payload.username,
-      Password: payload.password
+      Password: payload.password,
     };
 
     //sets up authentication details
     const authDetails = new AuthenticationDetails(authData);
     const userData = {
       Username: authData.Username,
-      Pool: userPool
+      Pool: userPool,
     };
 
     // creates a Cognito User object based on user auth details and user pool info
@@ -97,7 +102,7 @@ export default {
           cognitoUserName: result.idToken.payload["cognito:username"],
           refreshToken: result.refreshToken.token,
           accessToken: result.accessToken.jwtToken,
-          tokenExpiration: expirationDate
+          tokenExpiration: expirationDate,
         };
 
         // writes user data to localStorage
@@ -116,7 +121,7 @@ export default {
       onFailure(err) {
         console.log(err);
         alert(err.message);
-      }
+      },
     });
 
     console.log(test);
@@ -128,14 +133,14 @@ export default {
     //gets up Cognito authentication data from state
     const authData = {
       Username: payload.username,
-      Password: payload.password
+      Password: payload.password,
     };
 
     //sets up authentication details
     const authDetails = new AuthenticationDetails(authData);
     const userData = {
       Username: authData.Username,
-      Pool: userPool
+      Pool: userPool,
     };
 
     // creates a Cognito User object based on user auth details and user pool info
@@ -165,7 +170,7 @@ export default {
           cognitoUserName: result.idToken.payload["cognito:username"],
           refreshToken: result.refreshToken.token,
           accessToken: result.accessToken.jwtToken,
-          tokenExpiration: expirationDate
+          tokenExpiration: expirationDate,
         };
 
         // writes user data to localStorage
@@ -188,7 +193,7 @@ export default {
         console.log(err);
 
         throw error;
-      }
+      },
     });
   },
   logout(context) {
@@ -213,7 +218,7 @@ export default {
     const userPool = new CognitoUserPool(POOL_DATA);
     const userData = {
       Username: payload.email,
-      Pool: userPool
+      Pool: userPool,
     };
 
     const cognitoUser = new CognitoUser(userData);
@@ -228,14 +233,14 @@ export default {
       onFailure: function(err) {
         console.log(err);
         alert(err.message || JSON.stringify(err));
-      }
+      },
     });
   },
   resetPassword(_, payload) {
     const userPool = new CognitoUserPool(POOL_DATA);
     const userData = {
       Username: payload.email,
-      Pool: userPool
+      Pool: userPool,
     };
 
     const cognitoUser = new CognitoUser(userData);
@@ -247,11 +252,11 @@ export default {
       onFailure(err) {
         console.log(err);
         console.log("Password not confirmed!");
-      }
+      },
     });
   },
   autoLogout(context) {
     context.dispatch("logout");
     context.commit("setAutoLogout");
-  }
+  },
 };

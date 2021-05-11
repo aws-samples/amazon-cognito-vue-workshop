@@ -1,3 +1,7 @@
+<!-- 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0 
+-->
 <template>
   <div class="container">
     <div class="col-4 offset-md-4">

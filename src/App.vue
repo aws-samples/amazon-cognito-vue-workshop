@@ -1,3 +1,7 @@
+<!-- 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0  
+-->
 <template>
   <div>
     <site-nav></site-nav>
@@ -14,7 +18,7 @@ import { POOL_DATA } from "./config/cognito";
 
 export default {
   components: {
-    SiteNav
+    SiteNav,
   },
   setup() {
     const store = useStore();
@@ -49,7 +53,7 @@ export default {
     } else {
       store.dispatch("setIsAuthenticated", false);
     }
-  }
+  },
 };
 </script>
 

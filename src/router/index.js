@@ -1,3 +1,7 @@
+/*
+  Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  SPDX-License-Identifier: MIT-0 
+*/
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import SignUp from "@/views/auth/SignUp";
@@ -18,15 +22,15 @@ const routes = [
     component: Contacts,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   { path: "/signup", name: "SignUp", component: SignUp },
   { path: "/signin", name: "SignIn", component: SignIn },
   {
     path: "/forgotpassword",
     name: "ForgotPassword",
-    component: ForgotPassword
+    component: ForgotPassword,
   },
   { path: "/confirm", name: "Confirm", component: Confirm },
   {
@@ -35,8 +39,8 @@ const routes = [
     component: Settings,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: "/contacts",
@@ -44,8 +48,8 @@ const routes = [
     component: Contacts,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: "/delete-contact/:id",
@@ -53,8 +57,8 @@ const routes = [
     component: DeleteContact,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: "/edit-contact/:id",
@@ -62,8 +66,8 @@ const routes = [
     component: EditContact,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
   {
     path: "/add-contact",
@@ -71,15 +75,15 @@ const routes = [
     component: AddContact,
     beforeEnter: isAuthenticated,
     meta: {
-      requiresAuth: true
-    }
+      requiresAuth: true,
+    },
   },
-  { path: "/:notFound(.*)", component: NotFound }
+  { path: "/:notFound(.*)", component: NotFound },
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
 });
 
 function isAuthenticated(to, from, next) {
