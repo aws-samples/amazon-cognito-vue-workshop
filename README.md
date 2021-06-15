@@ -2,17 +2,30 @@
 
 ## What will be covered?
 
-This workshop will cover how to create the following functionality in a web application using the Cognito JavaScript SDK:
+In this workshop you will walk-through building a single page web application that allows you to track contacts. The application will integrate with Cognito, API Gateway and store the application data DynamoDB. Below is an outline what you will be doing in the workshop:
 
-### Use-Case
+1. Setup your development environment
+2. Get application template from GitHub
+3. Configure Cognito UserPool
+4. Write code to complete functionality of application (all code will be provided)
+5. Workshop Challenge
 
-### Building Web Application Authentication
+### Application pages
 
-- Sign Up page - add user to Cognito User Pool
-- Sign In page - authenticate a user stored in Cognito User Pool
-- Confirm User account - confirm user after they have sign up for a new account
-- Forgot Password - send user a password rest code
-- Enabled MFA - enabling MFA for a users account
+#### Authentication
+
+- Sign Up page - will allow users to sign-up in your application
+- Sign In page - will allow users to sign into in your application
+- Confirm account page - allows users to confirm their account after sign-up
+- Forgot Password - will allow users to reset their password
+- Enabled MFA - allows user to enable MFA on their account
+
+#### Contacts
+
+- Contact list - will display a list of contacts you have created
+- Add New Contact form - will allow you to add a new contact
+- Edit Contact form - will allow you to edit an existing contact
+- Delete Contact form - will allow you to delete an existing contact
 
 ### Getting Data into Web App
 
@@ -23,7 +36,7 @@ This workshop will cover how to create the following functionality in a web appl
 
 In this workshop we use the Vue 3 web framework to build out our SPA (Single Page Application). You do not need to be an expert in the framework to complete the workshop. We will provide all the code needed to complete the workshop, and have commented the code to make it easier to understand.
 
-**Note:** Having an understanding of JavaScript frameworks such as React and Angular would be benefical.
+**Note:** Having an understanding of JavaScript frameworks such as React and Angular would be beneficial.
 
 ### Resource Links
 
@@ -45,10 +58,22 @@ Validate Node was install by running the following command in your terminal or c
 node -v
 ```
 
+You should see output similar to the below text. You may be running a newer version.
+
+```
+v12.16.0
+```
+
 Validate NPM was install by running the following command in your terminal or commandline:
 
 ```
 npm -v
+```
+
+You should see output similar to the below text. You may be running a newer version.
+
+```
+7.10.0
 ```
 
 #### **Installing Vue 3**
