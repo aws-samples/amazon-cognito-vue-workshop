@@ -34,10 +34,6 @@ If you would like to stop the development server press "control+C"
 
 ### Current App state
 
-At this time if you navigate to the application URL where it says your **"App running at"**, the page would be blank. The reason is you have not yet setup ***Pool ID*** and the ***App Client ID*** in the config file. This is what you will do in the next section.
+At this time if you navigate to the application URL where it says your **"App running at"**, the page would be blank. The reason is you have not yet setup **_Pool ID_** and the **_App Client ID_** in the config file. This is what you will do in the next section.
 
-
-<<<<<<< HEAD:docs/2-GettingCode.md
-=======
-![home page](../docs/images/home-page.png)
->>>>>>> completed-code:docs/GettingCode.md
+[Configure application to use Cognito User Pool](docs/CognitoConfig.md)
