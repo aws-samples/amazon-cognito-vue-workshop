@@ -94,4 +94,4 @@ vue --version
 
 Your environment should now be setup to run all the code included in the workshop.
 
-[Getting workshop code](docs/2-GettingCode.md)
+[Getting workshop code](docs/GettingCode.md)
