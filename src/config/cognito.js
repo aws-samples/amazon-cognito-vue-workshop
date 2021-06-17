@@ -8,6 +8,6 @@
   replace with your UserPoolId and ClientId values here
 */
 export const POOL_DATA = {
-  UserPoolId: "us-east-1_uFC9MGHfW",
-  ClientId: "5fmpau196ldf5rr404q32fggii",
+  UserPoolId: "replace-user-pool-id-here",
+  ClientId: "replace-app-client-id-here",
 };

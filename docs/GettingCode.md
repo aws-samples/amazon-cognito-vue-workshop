@@ -28,7 +28,7 @@ npm run serve
 
 You should then see a message similar to the one below:
 
-![npm run](../images/npm-run.png)
+![npm run](../docs/images/npm-run.png)
 
 If you would like to stop the development server press "control+C"
 
@@ -37,3 +37,7 @@ If you would like to stop the development server press "control+C"
 At this time if you navigate to the application URL where it says your **"App running at"**, the page would be blank. The reason is you have not yet setup ***Pool ID*** and the ***App Client ID*** in the config file. This is what you will do in the next section.
 
 
+<<<<<<< HEAD:docs/2-GettingCode.md
+=======
+![home page](../docs/images/home-page.png)
+>>>>>>> completed-code:docs/GettingCode.md
