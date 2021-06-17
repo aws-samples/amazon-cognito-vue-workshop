@@ -32,8 +32,8 @@ You should then see a message similar to the one below:
 
 If you would like to stop the development server press "control+C"
 
-### Navigating to App
+### Current App state
 
-Ensure you can navigate to the URL that is displayed in your terminal window where it says your **"App running at"**, and you should see the screen below.
+At this time if you navigate to the application URL where it says your **"App running at"**, the page would be blank. The reason is you have not yet setup ***Pool ID*** and the ***App Client ID*** in the config file. This is what you will do in the next section.
 
-![home page](../images/home-page.png)
+
