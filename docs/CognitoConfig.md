@@ -49,4 +49,4 @@ You should now be able to restart your application and view the Sign In screen d
 
 Now you now start setting up the code to allow users to sign-up and and sign into your application.
 
-## [Coding Sign-In form](SignIn.md)
+## [Coding Sign-In form](SignUp.md)
