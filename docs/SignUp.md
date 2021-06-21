@@ -6,6 +6,17 @@ In this section you will setup the code that is needed to allow users to sign up
 
 ![npm run](../docs/images/signup-form.png)
 
+## Note about workshop code explanation
+
+As you work through the workshop we will not explain every line of code, but only focus on the core piece of code that is being used to interact with Cognito to get that particular form functioning.
+
+## Sign-up code explanation
+
+- In the first part of the code we get create a user pool object that references the Cognito user pool data that we setup in ## [Configure application to use Cognito User Pool](CognitoConfig.md) section.
+- Next an array/list of user pool attributes are created
+
+  - This array of attributes will be passed to the sign-up method. In this example we are only passing the email when the user signs up. You can pass other attributes such as first name or phone.
+
 ## Sign-up code
 
 ```js
@@ -46,13 +57,3 @@ await userPool.signUp(
   }
 );
 ```
-
-## Note about workshop code explanation
-
-As you work through the workshop we will not explain every line of code, but only focus on the core piece of code that is being used to interact with Cognito to get that particular form functioning.
-
-## Sign-up code explanation
-
-- In the first part of the code we get create a user pool object that references the Cognito user pool data that we setup in ## [Configure application to use Cognito User Pool](CognitoConfig.md) section.
-- Next an array/list of user pool attributes are created
-  - This array of attributes will be passed to the sign-up method. In this example we are only passing the email when the user signs up. You can pass other attributes such as first name or phone.
