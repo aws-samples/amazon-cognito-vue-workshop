@@ -139,4 +139,4 @@ Once your user pool has successfully been created you will see a screen similar 
 
 Now that you have setup your Cognito User Pool you will configure your application to use the user pool.
 
-## [Configure application to use Cognito User Pool](CognitoConfig.md)
+## [Configure application to use Cognito User Pool](SignUp.md)
