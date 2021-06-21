@@ -6,7 +6,7 @@ In this section you will setup the code that is needed to allow users to sign up
 
 ![npm run](../docs/images/signup-form.png)
 
-## Note about workshop code explanation
+## Note about workshop code explanations
 
 As you work through the workshop we will not explain every line of code, but only focus on the core piece of code that is being used to interact with Cognito to get that particular form functioning.
 
