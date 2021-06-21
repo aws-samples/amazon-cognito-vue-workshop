@@ -128,6 +128,8 @@ export default {
       }
 
       try {
+        //Signup code starts here
+
         const userPool = new CognitoUserPool(POOL_DATA);
 
         // sets Cognito sign up use attribbutes
@@ -163,6 +165,8 @@ export default {
             });
           }
         );
+
+        //Signup code ends here
       } catch (ex) {
         console.log(ex);
       }

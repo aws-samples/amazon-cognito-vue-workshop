@@ -36,7 +36,7 @@ In this workshop you will walk-through building a single page web application th
 
 In this workshop we use the Vue 3 web framework to build out our SPA (Single Page Application). You do not need to be an expert in the framework to complete the workshop. We will provide all the code needed to complete the workshop, and have commented the code to make it easier to understand.
 
-**Note:** Having an understanding of JavaScript frameworks such as React and Angular would be beneficial.
+**Note:** Having an understanding of JavaScript frameworks such as React and Angular would be beneficial. As you build out the application our focus will be on the JavaScript code. We will not be diving deep into the user-interface design as part of this workshop. All of the UI has been developed for you, so that you can concentrate on writing code that interacts with the JavaScript Cognito SDK.
 
 ### Resource Links
 
@@ -94,4 +94,4 @@ vue --version
 
 Your environment should now be setup to run all the code included in the workshop.
 
-[Getting workshop code](docs/GettingCode.md)
+## [Getting workshop code](docs/GettingCode.md)
