@@ -43,6 +43,8 @@ Paste that in the code where it says:
 
 and replace it with your ID value.
 
+## Application Cognito configuration complete
+
 You have now successfully configured your application to communicate with the Cognito User Pool you setup.
 
 ## Restarting and testing application
