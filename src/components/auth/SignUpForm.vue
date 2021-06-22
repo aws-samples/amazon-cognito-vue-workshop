@@ -129,7 +129,7 @@ export default {
 
       try {
         //Signup code starts here
-
+        //paste code here
         const userPool = new CognitoUserPool(POOL_DATA);
 
         // sets Cognito sign up use attribbutes
@@ -139,13 +139,7 @@ export default {
           Value: email.value,
         };
 
-        const phoneAttribute = {
-          Name: "phone_number",
-          Value: "+12145294079",
-        };
-
         attrList.push(new CognitoUserAttribute(emailAttribute));
-        attrList.push(new CognitoUserAttribute(phoneAttribute));
 
         await userPool.signUp(
           username.value,
@@ -165,7 +159,6 @@ export default {
             });
           }
         );
-
         //Signup code ends here
       } catch (ex) {
         console.log(ex);

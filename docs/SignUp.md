@@ -1,6 +1,6 @@
 # Sign-up code setup
 
-In this section you will setup the code that is needed to allow users to sign up for a new account in your application. Once you finish this section you have a completely functioning sign-up form that you see below.
+In this section you will setup the code that is needed to allow users to sign up for a new account in your application. Once you finish this section you will have a completely functioning sign-up form that you see below.
 
 ### Sign-up form
 
@@ -8,14 +8,19 @@ In this section you will setup the code that is needed to allow users to sign up
 
 ## Note about workshop code explanations
 
-As you work through the workshop we will not explain every line of code, but only focus on the core piece of code that is being used to interact with Cognito to get that particular form functioning.
+As you work through the workshop we will not explain every line of code. We will only focus on the core piece of code that is being used to interact with Cognito to get that particular form functioning. Also, through the code certain data is logged out to the developer console for easier debugging.
 
 ## Sign-up code explanation
 
-- In the first part of the code we get create a user pool object that references the Cognito user pool data that we setup in [Configure application to use Cognito User Pool](CognitoConfig.md) section.
+- In the first part of the code we get create a user pool object. The object parameter references the Cognito user pool data held in a constant that we setup in the [Configure application to use Cognito User Pool](CognitoConfig.md) section.
 - Next an array/list of user pool attributes are created
 
-  - This array of attributes will be passed to the sign-up method. In this example we are only passing the email when the user signs up. You can pass other attributes such as first name or phone.
+  - This array of attributes will be passed to the sign-up method as a parameter. In this example we are only passing the email when the user signs up. You can pass other attributes such as first name or phone as an example.
+
+- Next we call the **_signUp_** method that is part of the Cognito SDK to interact with User Pool via the SDK
+  - The username, password, and user attribute list are passed as parameters
+- If method calls is success you are redirected to the **_Confirm User Form_**
+- If the method calls fails an error message is displayed
 
 ## Sign-up code
 
@@ -29,15 +34,10 @@ const emailAttribute = {
   Value: email.value,
 };
 
-const phoneAttribute = {
-  Name: "phone_number",
-  Value: "+12145294079",
-};
-
-//adds attributes to list/array
+//adds attributes to array
 attrList.push(new CognitoUserAttribute(emailAttribute));
-attrList.push(new CognitoUserAttribute(phoneAttribute));
 
+//calls the signUp method
 await userPool.signUp(
   username.value,
   password.value,
@@ -57,3 +57,22 @@ await userPool.signUp(
   }
 );
 ```
+
+## Adding code to file
+
+- Next copy the code from the **_Sign-up code_** section that you reviewed above.
+- Now open the following file **_src/components/auth/SignUpForm.vue_** and locate the code snippet you see below.
+
+```js
+//Signup code starts here
+//paste code here
+//Signup code ends here
+```
+
+- Paste the code where is says **//paste code here**
+
+## Next Steps
+
+Now that you have added the code for the sign-up form you need to allow a user to confirm their account. In the next section you will complete the code for the user to confirm their account.
+
+## [Coding Confirm Account form](ConfirmAccount.md)
