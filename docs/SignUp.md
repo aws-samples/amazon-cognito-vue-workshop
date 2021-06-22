@@ -18,8 +18,8 @@ As you work through the workshop we will not explain every line of code. We will
   - This array of attributes will be passed to the sign-up method as a parameter. In this example we are only passing the email when the user signs up. You can pass other attributes such as first name or phone as an example.
 
 - Next we call the **_signUp_** method that is part of the Cognito SDK to interact with User Pool via the SDK
-  - The username, password, and user attribute list are passed as parameters
-- If method calls is success you are redirected to the **_Confirm User Form_**
+  - The username, password, and user attribute list are passed as parameters to the method.
+- If the method calls is success you are redirected to the **_Confirm User Form_**
 - If the method calls fails an error message is displayed
 
 ## Sign-up code
