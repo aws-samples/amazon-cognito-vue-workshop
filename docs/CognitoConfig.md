@@ -27,17 +27,21 @@ Now you will copy the Pool Id and paste that in the code where it says:
 "replace-user-pool-id-here",
 ```
 
-Next you navigate to the **_App Client Settings_** for your Cognito User Pool.
+Next you will need to navigate to the **_App Client Settings_** in the left-pane menu for your Cognito User Pool.
 
 ![npm run](../docs/images/app-setup/app-client-id1.png)
 
-Now you will copy the App Client ID, and paste that in the code where it says:
+Now you will copy the ID value. Your ID will be different than what you see in the screen below.
 
 ![npm run](../docs/images/app-setup/app-client-id2.png)
+
+Paste that in the code where it says:
 
 ```js
 "replace-app-client-id-here",
 ```
+
+and replace it with your ID value.
 
 You have now successfully configured your application to communicate with the Cognito User Pool you setup.
 
@@ -47,6 +51,6 @@ You should now be able to restart your application and view the Sign In screen d
 
 ![npm run](../docs/images/home-page.png)
 
-Now you will start setting up the code to allow users to sign-up and and sign into your application.
+Next you will start setting up the code to allow users to sign-up for an account, and confirm their account.
 
 ## [Coding Sign-In form](SignUp.md)
