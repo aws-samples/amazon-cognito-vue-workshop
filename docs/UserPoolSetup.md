@@ -114,7 +114,7 @@ Finally click the **_“Create app client”_** button before click the “Next 
 
 ## Finalize App Client
 
-You will now see the following screen after you have created your app client. Click the "Nect step" button.
+You will now see the following screen after you have created your app client. Click the "Next step" button.
 ![npm run](../docs/images/cognito-steps/app-client-finalize.png)
 
 ## Triggers
