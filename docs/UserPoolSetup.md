@@ -7,11 +7,10 @@ To begin setting up your Cognito User Pool navigate to Cognito in the AWS Consol
 ![npm run](../docs/images/cognito-steps/1-cognito-landing.png)
 
 - Click the “Manage User Pools” button. You will then the screen below.
-  <image-here>
-
-- Click the “Create a user pool” button and you should see the following screen.
 
 ![npm run](../docs/images/cognito-steps/2-user-pool-list.png)
+
+- Click the “Create a user pool” button and you should see the following screen.
 
 ## User pool name
 
