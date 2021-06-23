@@ -12,7 +12,7 @@ Each code section will be commented explaining exactly what it does.
 
 ```js
 /* 
-Create a user pool object. 
+Create a user pool object
 The object parameter references the Cognito user pool data held in a constant that we 
 setup in the Configure application to use Cognito User Pool section
 */
@@ -29,12 +29,12 @@ const emailAttribute = {
   Value: email.value,
 };
 
+attrList.push(new CognitoUserAttribute(emailAttribute));
+
 /*
 Call the signUp method that is part of the Cognito SDK to interact with User Pool via the SDK
 The username, password, and user attribute list are passed as parameters to the method.
 */
-attrList.push(new CognitoUserAttribute(emailAttribute));
-
 await userPool.signUp(
   username.value,
   password.value,
