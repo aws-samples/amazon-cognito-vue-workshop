@@ -2,7 +2,7 @@
 
 In this section you will setup the code that is needed to allow users to sign up for a new account in your application. Once you finish this section you will have a completely functioning sign-up form that you see below.
 
-### Sign-up form
+## Sign-up form
 
 ![npm run](../docs/images/signup-form.png)
 

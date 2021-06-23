@@ -88,42 +88,38 @@ export default {
       if (!isValid()) {
         return;
       }
+      //Confirm account code starts here
+      //paste code here
 
-      try {
-        // sets up Cognito User pool data
-        const userPool = new CognitoUserPool(POOL_DATA);
-        const userData = {
-          Username: username.value,
-          Pool: userPool,
-        };
+      // sets up Cognito User pool data
+      const userPool = new CognitoUserPool(POOL_DATA);
+      const userData = {
+        Username: username.value,
+        Pool: userPool,
+      };
 
-        // creates a Cognito User object based on username and user pool info
-        const cognitUser = new CognitoUser(userData);
-        console.log(cognitUser);
+      // creates a Cognito User object based on username and user pool info
+      const cognitUser = new CognitoUser(userData);
+      console.log(cognitUser);
 
-        // calls the Cognito confirm registration method
-        await cognitUser.confirmRegistration(
-          code.value,
-          true,
-          (err, result) => {
-            if (err) {
-              setMessage(err.message, "alert-danger");
-              return;
-            }
-
-            console.log(result);
-
-            router.replace({
-              name: "SignIn",
-              params: {
-                message: "You have successfully confirmed your account",
-              },
-            });
+      // calls the Cognito confirm registration method
+      await cognitUser.confirmRegistration(code.value, true, (err, result) => {
+          if (err) {
+            setMessage(err.message, "alert-danger");
+            return;
           }
-        );
-      } catch (ex) {
-        alert(ex.message);
-      }
+
+          console.log(result);
+
+          router.replace({
+            name: "SignIn",
+            params: {
+              message: "You have successfully confirmed your account",
+            },
+          });
+        }
+      );
+      //Confirm account code ends here
     }
 
     function isValid() {
