@@ -17,7 +17,7 @@ In this workshop you will walk-through building a single page web application th
 - Sign Up page - will allow users to sign-up in your application
 - Sign In page - will allow users to sign into in your application
 - Confirm account page - allows users to confirm their account after sign-up
-- Forgot Password - will allow users to reset their password
+- Forgot Password - will allow users to reset their password (this page will already be coded for you completely)
 - Enabled MFA - allows user to enable MFA on their account
 
 #### Contacts
