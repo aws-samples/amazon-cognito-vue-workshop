@@ -90,7 +90,7 @@ export default {
       }
 
       try {
-        //sets up Cognito User pool data
+        // sets up Cognito User pool data
         const userPool = new CognitoUserPool(POOL_DATA);
         const userData = {
           Username: username.value,
@@ -111,14 +111,14 @@ export default {
               return;
             }
 
+            console.log(result);
+
             router.replace({
               name: "SignIn",
               params: {
                 message: "You have successfully confirmed your account",
               },
             });
-
-            console.log(result);
           }
         );
       } catch (ex) {

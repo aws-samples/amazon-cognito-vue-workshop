@@ -130,15 +130,29 @@ export default {
       try {
         //Signup code starts here
         //paste code here
+
+        /* 
+        Create a user pool object. 
+        The object parameter references the Cognito user pool data held in a constant that we 
+        setup in the Configure application to use Cognito User Pool section
+        */
         const userPool = new CognitoUserPool(POOL_DATA);
 
-        // sets Cognito sign up use attribbutes
+        /*
+        This array of attributes will be passed to the sign-up method as a parameter. 
+        In this example we are only passing the email when the user signs up. 
+        You can pass other attributes such as first name or phone as an example.
+        */
         const attrList = [];
         const emailAttribute = {
           Name: "email",
           Value: email.value,
         };
 
+        /*
+        Call the signUp method that is part of the Cognito SDK to interact with User Pool via the SDK
+        The username, password, and user attribute list are passed as parameters to the method.
+        */
         attrList.push(new CognitoUserAttribute(emailAttribute));
 
         await userPool.signUp(
@@ -147,12 +161,15 @@ export default {
           attrList,
           null,
           (err, result) => {
+            // If the method calls fails an error message is displayed
             if (err) {
               setMessage(err.message, "alert-danger");
               return;
             }
 
             console.log(result);
+
+            // If the method calls is successful you are redirected to the Confirm User Form
             router.replace({
               name: "Confirm",
               query: { username: username.value },
