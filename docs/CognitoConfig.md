@@ -55,4 +55,4 @@ You should now be able to restart your application and view the Sign In screen d
 
 Next you will start setting up the code to allow users to sign-up for an account, and confirm their account.
 
-## [Coding Sign-In form](SignUp.md)
+## [Coding Sign-Up form](SignUp.md)

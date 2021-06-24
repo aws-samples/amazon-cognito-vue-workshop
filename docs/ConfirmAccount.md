@@ -62,10 +62,10 @@ await cognitUser.confirmRegistration(
 //paste code here
 //Confirm account code ends here
 ```
-## Next Steps
-The next step you should take after completing the code for the confirmation page is test the sign up and account confirmation process.
 
 ## Milestone 1 - Testing Sign-up and Confirmation process
+The next step you should take after completing the code for the confirmation page is test the sign up and account confirmation process.
+
 <ol>
 <li>Restart application server if needed.</li>
 <li>Navigate to the sign-up page</li>
@@ -76,3 +76,8 @@ The next step you should take after completing the code for the confirmation pag
 
 If everything is working correctly you should see the following screen after confirming your account:
 ![npm run](../docs/images/confirmation-success.png)
+
+## Next Steps
+Next you will code the sign-in page, so that you can sign in with the new account you should created.
+
+## [Coding Sign-In form](SignIn.md)

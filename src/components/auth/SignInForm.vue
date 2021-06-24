@@ -123,6 +123,9 @@ export default {
       if (!isValid()) {
         return;
       }
+      //Sign-in code starts here
+      //paste code here
+
       // sets up Cognito User pool data
       const userPool = new CognitoUserPool(POOL_DATA);
 
@@ -171,8 +174,8 @@ export default {
           cognitoUser.sendMFACode(mfaCode.value, this, codeDeliveryDetails);
         },
       });
+      // Sign-in code ends here
     }
-    // end of sign in method
 
     // calculates when user will be auto logged out
     function autoTimeout(result) {

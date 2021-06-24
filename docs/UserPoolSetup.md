@@ -1,6 +1,6 @@
 # Cognito User Pool setup
 
-In this section we will walkthrough step-by-step how-to setup a Cognito User Pool. The user pool will be where all of our users will be stored. This will give us the ability to have our users authentication into our application.
+In this section we will walk-through step-by-step how-to setup a Cognito User Pool. The user pool will be where all of our users will be stored. This will give us the ability to have our users authentication into our application.
 
 To begin setting up your Cognito User Pool navigate to Cognito in the AWS Console. You will then see the Cognito landing page pictured below.
 
@@ -114,6 +114,7 @@ Finally click the **_“Create app client”_** button before click the “Next 
 ## Finalize App Client
 
 You will now see the following screen after you have created your app client. Click the "Next step" button.
+
 ![npm run](../docs/images/cognito-steps/app-client-finalize.png)
 
 ## Triggers
