@@ -75,7 +75,7 @@ cognitoUser.authenticateUser(authDetails, {
 
 - Paste the sign-in code where is says **//paste code here**
 
-## Milestone 1 - Testing Sign-in 
+## Milestone 2 - Testing Sign-in 
 The next step you should take after completing the code for the sign-in page is test that you can sign in successfully.
 
 <ol>
