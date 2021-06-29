@@ -60,7 +60,7 @@ SPDX-License-Identifier: MIT-0
                     <button class="btn btn-danger mt-2 me-2" @click="cancel">
                       Cancel
                     </button>
-                    <button class="btn btn-success mt-2 " @click="associateMFA">
+                    <button class="btn btn-success mt-2 " @click="verifyMFA">
                       Confirm MFA Setup
                     </button>
                   </div>
@@ -128,6 +128,9 @@ export default {
 
       showQRCode.value = true;
 
+      //associate Software token code starts here
+      //paste code here
+
       // gets reference to the Cognito user pool
       const userPool = new CognitoUserPool(POOL_DATA);
 
@@ -135,7 +138,7 @@ export default {
       const cognitoUser = userPool.getCurrentUser();
       cognitoUser.setSignInUserSession(store.getters.session);
 
-      //creates data for QR Code that user will scan
+      //creates the image data for QR Code that the user will scan
       cognitoUser.associateSoftwareToken({
         onSuccess: function(result) {
           console.log(result);
@@ -156,10 +159,13 @@ export default {
           );
         },
       });
+      // associate Software token code end here
     }
 
-    function associateMFA() {
+    function verifyMFA() {
       console.log("Assoicating MFA");
+      //verify Software token code starts here
+      //paste code here
 
       // gets reference to the Cognito user pool
       const userPool = new CognitoUserPool(POOL_DATA);
@@ -188,10 +194,14 @@ export default {
           );
         },
       });
+      //verify Software token code ends here
     }
 
     // method that enables or disables MFA for a users account
     function setMFA(isEnabled) {
+      //verify Software token code starts here
+      //paste code here
+
       // gets reference to the Cognito user pool
       const userPool = new CognitoUserPool(POOL_DATA);
 
@@ -216,6 +226,7 @@ export default {
         store.dispatch("setMFA", isEnabled);
         console.log("setUserMfaPreference call result " + result);
       });
+      //verify Software token code ends here
     }
 
     //computed property that stores whether MFA is enable or disabled for user
@@ -237,7 +248,7 @@ export default {
       newQRCode,
       showQRCode,
       qrCode,
-      associateMFA,
+      verifyMFA,
       cancel,
       message,
       messageStyleType,

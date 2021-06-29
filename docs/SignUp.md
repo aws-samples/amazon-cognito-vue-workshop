@@ -6,8 +6,10 @@ In this section you will setup the code that is needed to allow users to sign up
 
 ![npm run](../docs/images/signup-form.png)
 
-## Note: 
-Each code section will be commented explaining exactly what it does. 
+## Note:
+
+Each code section will be commented explaining exactly what it does.
+
 ## Sign-up code
 
 ```js
@@ -69,7 +71,7 @@ await userPool.signUp(
 //Signup code ends here
 ```
 
-- Paste the sign-up code where is says **//paste code here**
+- Paste the sign-up code where it says **//paste code here**
 
 ## Next Steps
 
