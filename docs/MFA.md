@@ -59,7 +59,7 @@ cognitoUser.associateSoftwareToken({
 ```js
 //associate Software token code starts here
 //paste code here
-//associate Software token code starts here
+//associate Software token code ends here
 ```
 
 - Paste the code where it says **//paste code here**
