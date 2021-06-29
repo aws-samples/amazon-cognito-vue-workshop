@@ -164,9 +164,6 @@ The next step you should take after completing the code for the MFA page is test
 
 If everything is working correctly you should see the following screen after signing in to your account.
 
-**Note:** Disregard the error that says, "Problem loading contacts.". You will fix this in a future section of the workshop.
-![npm run](../docs/images/first-MFA.png)
-
 ## Next Steps
 
 Next you will code the MFA settings page, so that you can sign in with your account using a MFA code.
