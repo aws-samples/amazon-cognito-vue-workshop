@@ -43,3 +43,5 @@ Next you will fill in the information to create the **Authorizer**. You can see 
 You should then see the following screen.
 
 ![npm run](../docs/images/authorizer/auth-5.png)
+
+## [Configuring API Gateway endpoint Authorization](API.md)
