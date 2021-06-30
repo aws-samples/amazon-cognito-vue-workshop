@@ -15,7 +15,7 @@ const api =
 export default {
   // calls the API Gateway endpoint for getting all Contacts
   async fetchContacts({ commit, rootState }) {
-    // creating header to pass jwtToken with request to API endpoint
+    // creates header object to pass Cognito idToken with request to API endpoint
     const headers = {
       "Content-Type": "application/json",
       Authorization: rootState.authModule.idToken,
@@ -23,10 +23,18 @@ export default {
 
     commit("setIsLoading", true);
 
+    /* 
+    makes call to the API Gateway endpoint by passing 
+    api URL and header object via GET request
+    */
     const response = await axios.get(api, {
       headers: headers,
     });
 
+    /*
+    if status code is 200 then data is loaded in store and
+    activity spinner UI element is hidden
+    */
     if (response.status == "200") {
       commit("setContacts", response.data);
       commit("setIsLoading", false);
@@ -36,11 +44,13 @@ export default {
   async addContact({ commit, rootState }, payload) {
     commit("setIsLoading", true);
 
+    // creates header object to pass Cognito idToken with request to API endpoint
     const headers = {
       "Content-Type": "application/json",
       Authorization: rootState.authModule.idToken,
     };
 
+    //holds contact object
     const contact = {
       id: payload.id,
       owner_id: payload.owner_id,
@@ -53,10 +63,18 @@ export default {
       zip: payload.zip,
     };
 
+    /* 
+    makes call to the API Gateway endpoint by passing 
+    api URL and header object via POST request
+    */
     const response = await axios.post(api, contact, {
       headers: headers,
     });
 
+    /*
+    if status code is 200 then data is loaded in store and
+    activity spinner UI element is hidden
+    */
     if (response.status == "200") {
       commit("addContact", payload);
       commit("setIsLoading", false);
@@ -64,6 +82,7 @@ export default {
   },
   // calls the delete API Gateway endpoint for Contacts
   async deleteContact({ commit, rootState }, payload) {
+    // creates header object to pass Cognito idToken with request to API endpoint
     const headers = {
       "Content-Type": "application/json",
       Authorization: rootState.authModule.idToken,
@@ -71,10 +90,18 @@ export default {
 
     commit("setIsLoading", true);
 
+    /* 
+    makes call to the API Gateway endpoint by passing 
+    api URL and header object via DELETE request
+    */
     const response = await axios.delete(`${api}?id=${payload.id}`, {
       headers: headers,
     });
 
+    /*
+    if status code is 200 then data is loaded in store and
+    activity spinner UI element is hidden
+    */
     if (response.status == "200") {
       commit("deleteContact", payload.id);
       commit("setIsLoading", false);

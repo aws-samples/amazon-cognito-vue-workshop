@@ -166,6 +166,6 @@ If everything is working correctly you should see the following screen after sig
 
 ## Next Steps
 
-Next you will code the MFA settings page, so that you can sign in with your account using a MFA code.
+Next you will setup the Authorizer on API Gateway to allow Cognito to be used as an Authorizer.
 
-## [Updating API Gateway endpoint Authorization](API.md)
+## [Configuring Cognito Authorizer](CognitoAuthorizer.md)
