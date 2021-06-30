@@ -44,4 +44,8 @@ You should then see the following screen.
 
 ![npm run](../docs/images/authorizer/auth-5.png)
 
+## Next Steps
+
+Now that you have setup an **Authorizer** you can configure the API Gateway endpoints to use them. That is what will be covered in the next section.
+
 ## [Configuring API Gateway endpoint Authorization](API.md)
