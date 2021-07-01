@@ -49,11 +49,11 @@ Click on **ContactAPI** and you should see the following screen.
 
 ![npm run](../docs/images/api-gateway/api-2.png)
 
-Next click on **DELETE** under the **_Resources_** panel. After you click on **DELETE** you should see the screen below.
+1.  Next click on **DELETE** under the **_Resources_** panel. After you click on **DELETE** you should see the screen below.
 
 ![npm run](../docs/images/api-gateway/api-3.png)
 
-Now you will click on the link that says **Method Request** at the top of the panel seen in the screen below.
+2.  Now you will click on the link that says **Method Request** at the top of the panel seen in the screen below.
 
 ![npm run](../docs/images/api-gateway/api-4.png)
 
@@ -61,4 +61,20 @@ The following screen should now appear.
 
 ![npm run](../docs/images/api-gateway/api-5.png)
 
-Next click the pencil icon next **Authorization**, and select the name of the Cognito
+3.  Next click the pencil icon next **Authorization**, and select the name of your **Cognito Authorizer**. You should see a screen similar to the one below. The name of your authorizer will be different. In this example the name of the authorizer is **cognito_authorizer**.
+
+![npm run](../docs/images/api-gateway/api-6.png)
+
+4. After you have selected your authorizer in the drop down list click the checkbox icon to save your changes.
+
+![npm run](../docs/images/api-gateway/api-7.png)
+
+5.  Once you have saved your changes you should see a screen similar to the one below.
+
+![npm run](../docs/images/api-gateway/api-8.png)
+
+Next complete steps 1 through 5 for the **GET** and **POST** actions
+
+![npm run](../docs/images/api-gateway/api-9.png)
+
+After you have added the Cognito authorizer to the **DELETE**, **GET**, **POST** actions for the API resource your application should now be able to communicate with the API Gateway endpoint.
