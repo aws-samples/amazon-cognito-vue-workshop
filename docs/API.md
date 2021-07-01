@@ -78,3 +78,6 @@ Next complete steps 1 through 5 for the **GET** and **POST** actions
 ![npm run](../docs/images/api-gateway/api-9.png)
 
 After you have added the Cognito authorizer to the **DELETE**, **GET**, **POST** actions for the API resource your application should now be able to communicate with the API Gateway endpoint.
+
+The last thing that you need to do is deploy the changes that have been made to the API. You will cover that in the next section.
+## [Deploy API](API-Deploy.md)
