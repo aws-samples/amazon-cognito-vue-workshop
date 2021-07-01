@@ -41,3 +41,9 @@ Now that you have completed the setup of the Cognito User Pool, added all the co
 - Next pick any of the contacts you have added select the delete icon for that contact
 - Confirm that you want to delete the contact
 - Make sure the contact no longer shows up on the contact list
+
+If everything works correctly - You're done!!
+
+Next if you are up for it we have a few challenges. Move on the next section if you would like to complete the final two challenges.
+
+## [Bonus Challenge](Bonus.md)
