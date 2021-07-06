@@ -46,4 +46,4 @@ If everything works correctly - You're done!!
 
 Next if you are up for it we have a few challenges. Move on the next section if you would like to complete the final two challenges.
 
-## [Bonus Challenge](Bonus.md)
+## [Bonus Challenges](Bonus.md)
