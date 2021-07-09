@@ -4,7 +4,7 @@
 */
 import axios from "axios";
 
-// Update with your API Gateway endpoint
+// Update with your API Gateway endpoint.This is the Invoke URL you copied after deploying your API.
 const api = "https://your-api-gateway-endpoint-goes-here/contact/";
 
 // const api =

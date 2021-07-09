@@ -27,14 +27,14 @@ Go back to your Cloud9 code editor, and open the following file **src/store/cont
 ### Code Snippet
 
 ```js
-// Update with your API Gateway endpoint
+// Update with your API Gateway endpoint. This is the Invoke URL you copied after deploying your API.
 const api = "https://your-api-gateway-endpoint-goes-here/contact/";
 ```
 
 ### Update Code Snippet example
 
 ```js
-// Update with your API Gateway endpoint
+// Update with your API Gateway endpoint. This is the Invoke URL you copied after deploying your API.
 const api =
   "https://qbj694xaih.execute-api.us-east-1.amazonaws.com/prod/contact/";
 ```
