@@ -3,9 +3,12 @@
   SPDX-License-Identifier: MIT-0 
 */
 import axios from "axios";
-// Update with you API Gateway endpoint
-const api =
-  "https://qbj694xaih.execute-api.us-east-1.amazonaws.com/prod/contact/";
+
+// Update with your API Gateway endpoint
+const api = "https://your-api-gateway-endpoint-goes-here/contact/";
+
+// const api =
+//   "https://qbj694xaih.execute-api.us-east-1.amazonaws.com/prod/contact/";
 
 /*
   Axios is being used to make calls to API
