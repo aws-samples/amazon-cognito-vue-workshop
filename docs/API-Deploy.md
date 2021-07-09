@@ -39,6 +39,6 @@ const api =
   "https://qbj694xaih.execute-api.us-east-1.amazonaws.com/prod/contact/";
 ```
 
-Be sure that you include **/contact/** after your API endpoint URL. This points to the **contact** resource on the API Gateway endpoint. After you have completed this you can restart your application if needed.
+Be sure that you include **/contact/** after your API endpoint URL. This points to the **contact** resource on the API Gateway endpoint. After you have completed this you can restart your application if needed. Next you will test your application.
 
 ## [Test Your Application](Testing.md)
