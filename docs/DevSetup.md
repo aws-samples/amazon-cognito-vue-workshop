@@ -1,6 +1,6 @@
 # Accessing Development Environment - (AWS Cloud9)
 
-In this section you wll walk-through accessing your development and environment, and getting the code to run the workshop
+In this section you will walk-through accessing your development and environment, and getting the code to run the workshop
 
 After logging into your Event Engine AWS account you will navigate to the **_AWS Cloud9_** service. You should then see a screen similar to the one below.
 
