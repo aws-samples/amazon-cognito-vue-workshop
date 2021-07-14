@@ -42,56 +42,8 @@ In this workshop we use the Vue 3 web framework to build out our SPA (Single Pag
 
 - [Get more information about Vue 3](https://v3.vuejs.org/)
 
-## Environment Setup
+### Next Steps
 
-In order to run the workshop you will need to configure your environment. Below are the prereqs. needed.
+In the next section you will walk-through accessing your development environment for th workshop, and retrieving the source code for the workshop
 
-**Note:** If your environment is already setup you can skip the steps below, and go to the **_Getting Workshop Code_** section.
-
-#### **Installing Node**
-
-follow the instructions for your environment here https://nodejs.org/en/download/
-
-Validate Node was install by running the following command in your terminal or commandline:
-
-```
-node -v
-```
-
-You should see output similar to the below text. You may be running a newer version.
-
-```
-v12.16.0
-```
-
-Validate NPM was install by running the following command in your terminal or commandline:
-
-```
-npm -v
-```
-
-You should see output similar to the below text. You may be running a newer version.
-
-```
-7.10.0
-```
-
-#### **Installing Vue 3**
-
-You will run the following command in your terminal or commandline. This will install the latest stable version.
-
-```
-npm install vue@next
-```
-
-#### Validate Vue install
-
-```
-vue --version
-```
-
-### Environment Setup Complete
-
-Your environment should now be setup to run all the code included in the workshop.
-
-## [Getting workshop code](docs/GettingCode.md)
+## [Accessing Development Environment](docs/DevSetup.md)
