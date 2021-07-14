@@ -90,35 +90,6 @@ export default {
       }
       //Confirm account code starts here
       //paste code here
-
-      // sets up Cognito User pool data
-      const userPool = new CognitoUserPool(POOL_DATA);
-      const userData = {
-        Username: username.value,
-        Pool: userPool,
-      };
-
-      // creates a Cognito User object based on username and user pool info
-      const cognitUser = new CognitoUser(userData);
-      console.log(cognitUser);
-
-      // calls the Cognito confirm registration method
-      await cognitUser.confirmRegistration(code.value, true, (err, result) => {
-          if (err) {
-            setMessage(err.message, "alert-danger");
-            return;
-          }
-
-          console.log(result);
-
-          router.replace({
-            name: "SignIn",
-            params: {
-              message: "You have successfully confirmed your account",
-            },
-          });
-        }
-      );
       //Confirm account code ends here
     }
 

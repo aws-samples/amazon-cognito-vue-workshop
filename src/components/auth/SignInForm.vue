@@ -125,55 +125,6 @@ export default {
       }
       //Sign-in code starts here
       //paste code here
-
-      // sets up Cognito User pool data
-      const userPool = new CognitoUserPool(POOL_DATA);
-
-      // sets up Cognito authentication data from sign in form
-      const authData = {
-        Username: username.value,
-        Password: password.value,
-      };
-
-      // sets up authentication details - includes username and user pool info
-      const authDetails = new AuthenticationDetails(authData);
-      const userData = {
-        Username: authData.Username,
-        Pool: userPool,
-      };
-
-      // creates a Cognito User object based on user auth details and user pool info
-      const cognitoUser = new CognitoUser(userData);
-
-      //calls the authenticate user method
-      cognitoUser.authenticateUser(authDetails, {
-        onSuccess(session) {
-          console.log(session);
-          // saves user session info to Vue state system
-          setUserSessionInfo(session);
-
-          // navigates to contacts list after logging in
-          router.replace({
-            name: "Contacts",
-            params: { message: "You have successfully signed in" },
-          });
-        },
-        onFailure(error) {
-          console.log(error);
-
-          if (!error.message.includes("SOFTWARE_TOKEN_MFA_CODE")) {
-            setMessage(error.message, "alert-danger");
-          }
-
-          store.dispatch("setIsLoading", false);
-        },
-        totpRequired(codeDeliveryDetails) {
-          // MFA is required to complete user authentication.
-          // Get the code from user
-          confirmMFACode.value = true;
-          cognitoUser.sendMFACode(mfaCode.value, this, codeDeliveryDetails);
-        },
-      });
       // Sign-in code ends here
     }
 
