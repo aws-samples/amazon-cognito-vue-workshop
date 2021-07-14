@@ -32,6 +32,7 @@
     "prettier": "^1.19.1"
   },
   "eslintConfig": {
+    "eslint-disable": true,
     "root": true,
     "env": {
       "node": true
