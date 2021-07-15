@@ -55,6 +55,10 @@ To test your application you will want to restart your test web server if it not
 npm run serve
 ```
 
+**Note:** Make sure you are in the correct directory when running the above command or you will receive an error similar to the one seen below.
+
+![npm run](../docs/images/dev-env-setup/cloud9-12.png)
+
 <!-- ![npm run](../docs/images/dev-env-setup/cloud9-7.png) -->
 
 To see your application running in the browser click the **_Preview_** tab at the top of the screen, and then select **_Preview Running Application_**. See screenshot below.
