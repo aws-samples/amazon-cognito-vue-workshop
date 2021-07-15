@@ -43,15 +43,35 @@ Paste that in the code where it says:
 
 and replace it with your ID value.
 
-## Application Cognito configuration complete
+## Application Cognito User Pool configuration complete
 
 You have now successfully configured your application to communicate with the Cognito User Pool you setup.
 
-## Restarting and testing application
+## Testing your application
 
-You should now be able to restart your application and view the Sign In screen displayed in the image below.
+To test your application you will want to restart your test web server if it not running. See command below to start your development web server.
 
-![npm run](../docs/images/home-page.png)
+```shell
+npm run serve
+```
+
+<!-- ![npm run](../docs/images/dev-env-setup/cloud9-7.png) -->
+
+To see your application running in the browser click the **_Preview_** tab at the top of the screen, and then select **_Preview Running Application_**. See screenshot below.
+
+![npm run](../docs/images/dev-env-setup/cloud9-8.png)
+
+Your app may start in bottom of the Cloud9 IDE. See example below of how your application may initially load.
+
+![npm run](../docs/images/dev-env-setup/cloud9-9.png)
+
+You can expand the application into a new tab by clicking the icon in the corner of your application window. See image below of icon to click to open application in a new browser tab. Click the expand icon to the right of the **Browser** button. This will allow you to test your application in full screen mode.
+
+![npm run](../docs/images/dev-env-setup/cloud9-11.png)
+
+Once you have expanded the application in a separate browser tab you should see the below application running.
+
+![npm run](../docs/images/dev-env-setup/cloud9-10.png)
 
 Next you will start setting up the code to allow users to sign-up for an account, and confirm their account.
 

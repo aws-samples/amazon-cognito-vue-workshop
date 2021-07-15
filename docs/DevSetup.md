@@ -53,28 +53,10 @@ Now that you have installed all needed modules to run the workshop you will star
 npm run serve
 ```
 
-This command will start a development web server to test your code against. After you have run the command above your development web serve should be running. Your terminal should display the output you see below.
-
-![npm run](../docs/images/dev-env-setup/cloud9-7.png)
-
-To see your application running click the **_Preview_** tab at the top of the screen, and then select **_Preview Running Application_**. See screenshot below.
-
-![npm run](../docs/images/dev-env-setup/cloud9-8.png)
-
-Your app may start in bottom of the Cloud9 IDE. See example below of how your application may initially load.
-
-![npm run](../docs/images/dev-env-setup/cloud9-9.png)
-
-You can expand the application into a new tab by clicking the icon in the corner of your application window. See image below of icon to click to open application in new tab. Click the expand icon to the right of the **Browser** button. This will allow you to test you application in full screen mode.
-
-![npm run](../docs/images/dev-env-setup/cloud9-11.png)
-
-Once you have expanded the application in a separate tab you should see the below application running.
-
-![npm run](../docs/images/dev-env-setup/cloud9-10.png)
+This command will start a development web server to test your code against. After you have run the command above your development web server should be running. Your terminal should display the output you see below.
 
 ## Next Steps
 
-Now that you have the application running you will setup your Cognito User Pool.
+The next step required to get your application up and running is setup your Cognito User Pool. This is what you will setup in the next section of the of workshop.
 
 ## [Cognito User Pool setup](UserPoolSetup.md)

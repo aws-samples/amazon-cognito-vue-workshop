@@ -27,11 +27,6 @@ In this workshop you will walk-through building a single page web application th
 - Edit Contact form - will allow you to edit an existing contact
 - Delete Contact form - will allow you to delete an existing contact
 
-### Getting Data into Web App
-
-- Learn how to send Cognito token information to an API Gateway endpoint
-- Make calls to API Gateway endpoint and get data to populate in the web application.
-
 ### Web Technology Stack used in the workshop
 
 In this workshop we use the Vue 3 web framework to build out our SPA (Single Page Application). You do not need to be an expert in the framework to complete the workshop. We will provide all the code needed to complete the workshop, and have commented the code to make it easier to understand.
