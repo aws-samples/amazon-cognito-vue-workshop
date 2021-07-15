@@ -49,7 +49,9 @@ You have now successfully configured your application to communicate with the Co
 
 ## Testing your application
 
-To test your application you will want to restart your test web server if it not running. See command below to start your development web server.
+- Navigate back to the Cloud9 IDE
+
+To test your application you will want to restart your test web server if it not running. See command below to run in the Cloud9 IDE terminal to start your development web server.
 
 ```shell
 npm run serve
