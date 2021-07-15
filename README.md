@@ -42,8 +42,4 @@ In this workshop we use the Vue 3 web framework to build out our SPA (Single Pag
 
 - [Get more information about Vue 3](https://v3.vuejs.org/)
 
-### Next Steps
-
-In the next section you will walk-through accessing your development environment for th workshop, and retrieving the source code for the workshop
-
-## [Accessing Development Environment](docs/DevSetup.md)
+### [Switch to main code branch to see all documentation for workshop](https://github.com/aws-samples/amazon-cognito-vue-workshop)
