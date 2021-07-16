@@ -1,26 +1,26 @@
 # Cognito User Pool setup
 
-In this section we will walk-through step-by-step how-to setup a Cognito User Pool. The user pool will be where all of our users will be stored. This will give us the ability to have our users authentication into our application.
+In this section we will walk-through how-to setup the Cognito User Pool that will be used by your application. The user pool will be where all of your users will be stored. This will give you the ability to have your users authenticate into our application.
 
-To begin setting up your Cognito User Pool navigate to Cognito in the AWS Console. You will then see the Cognito landing page pictured below.
+To begin setting up your Cognito User Pool navigate to the Cognito service in the AWS Console of your Event Engine account. You will then see the Cognito landing page pictured below.
 
 ![npm run](../docs/images/cognito-steps/1-cognito-landing.png)
 
-Click the **_Manage User Pools_** button. You will then the screen below.
+Click the **_Manage User Pools_** button. You will see screen below.
 
 ![npm run](../docs/images/cognito-steps/2-user-pool-list.png)
 
-Click the **_Create a user pool_** button and you should see the following screen.
+Click the **_Create a user pool_** button, and you should see the screen below.
 
 ## User pool name
 
-You will then give you user pool a “Pool name”. After you have entered a pool name click the “Step through settings” button.
+The first thing you do is give your user pool a “Pool name”. After you have entered a pool name click the “Step through settings” button.
 
 ![npm run](../docs/images/cognito-steps/3-user-pool-step-1.png)
 
 ## Attributes
 
-For the user pool attributes select the options that you see in the image below.
+Next you will setup the user pool attributes. For the user pool attributes select the options that you see in the image below.
 
 ![npm run](../docs/images/cognito-steps/4-user-pool-attributes.png)
 
@@ -56,7 +56,7 @@ After you have completed this form click the “Next step” button at the botto
 
 ## Tags
 
-On the next screen if you would like you can add tags to your user pool. For the workshop we will leave tags black.
+On the next screen if you would like you can add tags to your user pool. For the workshop we will leave tags blank.
 
 ![npm run](../docs/images/cognito-steps/9-user-pool-tags.png)
 
@@ -72,7 +72,7 @@ Click the “Next step” button at the bottom of the screen.
 
 ## App clients
 
-On the next screen we will setup the app client. By configuring the “app client” we setting up the ability for an application to connect to our user pool. In this workshop we will be connecting to the user pool via the JavaScript SDK. On the screen you see below click the “Add an app client” link.
+On the next screen we will setup the app client. By configuring the “app client” you are setting up the ability for an application to connect to your user pool. In this workshop we will be connecting to the user pool via the JavaScript SDK. On the screen you see below click the “Add an app client” link.
 
 ![npm run](../docs/images/cognito-steps/app-client-home.png)
 
@@ -90,7 +90,7 @@ You will start giving your app client a name.
 
 For the Refresh token expiration, Access token expiration, and ID token expiration you leave the default values for the workshop. If you wanted the tokens to expire before the default time-frames you can always come back and make changes.
 
-**_Note_**: Be sure to uncheck "Generate client secret". Since we are running our code on the client-side we will not sure this option. If our code was running in server-side where users wouldn't have access to view our code we could use this option.
+**_Note_**: Be sure to uncheck "Generate client secret". Since you are running your code on the client-side you will not use this option. If your code was running on the server-side where users wouldn't have access to view your code you could use this option.
 
 ![npm run](../docs/images/cognito-steps/token-expiration.png)
 
@@ -98,9 +98,9 @@ Next click the "Create app client" button.
 
 ## Auth Flows Configuration section
 
-For the auth flow settings be sure you select the third checkbox option, “Enable username password-based authentication (ALLOW_USER_PASSWORD_AUTH)”
+For the auth flow settings be sure you select the third checkbox option, **Enable username password-based authentication (ALLOW_USER_PASSWORD_AUTH)**
 
-This setting allows user to log into your Cognito user pool via username and password. If this option is not selected you will receive an error when you code call the authentication method.
+This setting allows users to log into your Cognito user pool via username and password. If this option is not selected you will receive an error when you code call the authentication method.
 
 ![npm run](../docs/images/cognito-steps/auth-flow.png)
 
@@ -119,7 +119,7 @@ You will now see the following screen after you have created your app client. Cl
 
 ## Triggers
 
-For the triggers we will not be using them for this workshop. If you needed to add things custom logic for pre-authentication, pre-signup, post authentication, or post account confirmation you would configure those triggers here to initiate lambda functions.
+For the triggers you will not be using them for this workshop. If you needed to add things such as custom logic for pre-authentication, pre-signup, post authentication, or post account confirmation you would configure those triggers here to initiate lambda functions.
 
 A good example of taking advantage Cognito triggers are after a user confirms their account you could have default user settings record created in a backend database.
 
