@@ -1,6 +1,6 @@
 # MFA code setup
 
-In this section you will setup the code that is needed to allow users users to enable MFA on their user accounts.
+In this section you will setup the code that is needed to allow users to enable MFA on their user accounts.
 Once you finish this section a user will be prompted for their MFA code after signing in.
 
 ## MFA Forms
@@ -9,7 +9,7 @@ Below are screenshots of the forms that will be coded to allow you to enable MFA
 
 **Enable MFA form**
 
-This form will allow you to enable MFA by clicking the checkbox that says "Enabled MFA".
+This form will allow you to enable MFA by clicking the checkbox that says **_Enabled MFA_**.
 
 ![npm run](../docs/images/mfa-setting-1.png)
 
@@ -19,9 +19,11 @@ This form will allow you confirm the MFA Code after scanning it into your MFA ap
 
 ![npm run](../docs/images/mfa-setting-2.png)
 
+Next you will begin adding the code needed for the MFA functionality of your application.
+
 ## Associate MFA code to authenticator app (Authy, Microsoft Authenticator or Google Authenticator) - code snippet
 
-This section of code associates the MFA code to your MFA app
+This section of code associates the MFA code to your MFA app.
 
 ```js
 //gets reference to the Cognito user pool
@@ -66,7 +68,7 @@ cognitoUser.associateSoftwareToken({
 
 ## Verify MFA Code - code snippet
 
-This section of code associates the MFA code to your MFA app
+This section of code associates the MFA code to your MFA app.
 
 ```js
 // gets reference to the Cognito user pool
@@ -113,7 +115,7 @@ cognitoUser.verifySoftwareToken(qrCode.value, "SoftwareToken", {
 
 ## Set user MFA status - code snippet
 
-This section of code enables or disables MFA on a users profile
+This section of code allows a user to enable or disable MFA on their user profile.
 
 ```js
 // gets reference to the Cognito user pool
@@ -154,18 +156,24 @@ cognitoUser.setUserMfaPreference(null, totpMfaSettings, function(err, result) {
 
 ## Milestone 3 - Testing Sign-in with MFA code
 
-The next step you should take after completing the code for the MFA page is test that you can sign in successfully.
+The next step you should take after completing the code for the MFA page is test that you can enable MFA on your account.
 
 <ol>
 <li>Restart application server if needed.</li>
 <li>Navigate to the MFA page</li>
 <li>Sign in with the account you created in the previous section</li>
+<li>Navigate to Settings in the navigation bar</li>
+<li>Click the Enable MFA checkbox</li>
+<li>Scan the QR code that appears with your app of choice. (Authy, Microsoft Authenticator or Google Authenticator)</li>
+<li>Confirm your MFA code</li>
+<li>Sign out of the application</li>
+<li>Sign back in and you should be prompted for your MDA code</li>
 </ol>
 
-If everything is working correctly you should see the following screen after signing in to your account.
+If everything is working correctly you should be able to successfully sign back into the back into the application.
 
 ## Next Steps
 
-Next you will setup the Authorizer on API Gateway to allow Cognito to be used as an Authorizer.
+Next you will setup the Authorizer in the API Gateway service to allow Cognito to be used as an Authorizer on your API Gateway endpoints.
 
 ## [Configuring Cognito Authorizer](CognitoAuthorizer.md)
