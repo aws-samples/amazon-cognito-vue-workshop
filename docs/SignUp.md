@@ -10,7 +10,7 @@ In this section you will setup the code that is needed to allow users to sign up
 
 Each code section will be commented explaining exactly what it does.
 
-## Sign-up code
+## Sign-up - code snippet
 
 ```js
 /* 
@@ -62,7 +62,7 @@ await userPool.signUp(
 
 ## Adding code to file
 
-- Next copy the code from the **_Sign-up code_** section that you reviewed above.
+- Next copy the code from the **_Sign-up - code snippet_** section that you reviewed above.
 - Now open the following file **_src/components/auth/SignUpForm.vue_** and locate the code snippet you see below.
 
 ```js
@@ -72,6 +72,8 @@ await userPool.signUp(
 ```
 
 - Paste the sign-up code where it says **//paste code here**
+
+You have now added all the required code needed for a user to sign-up for an account.
 
 ## Next Steps
 

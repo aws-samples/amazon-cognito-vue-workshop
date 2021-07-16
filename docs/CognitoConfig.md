@@ -1,8 +1,8 @@
 # Configure application to use Cognito User Pool
 
-In this section you will setup the application to communicate with the Cognito User Pool. In order to do this you will need two piece of information about the user pool. You will need the **_Pool ID_** and the **_App Client ID_**. To complete this step you will open the JavaScript file that will use the pool ID and app client ID.
+In this section you will setup the application to communicate with the Cognito User Pool. In order to do this you will need two pieces of information about the user pool. You will need the **_Pool ID_** and the **_App Client ID_**. To complete this step you will open the JavaScript file that will use the pool ID and app client ID.
 
-To be configuration open your project code in your favorite text editor editor/IDE. Now navigate to the following JavaScript file **/src/config/cognito.js** in your project.
+In the Cloud9 IDE navigate to the following JavaScript file **/src/config/cognito.js** in your project.
 
 - The pool ID represents an unique ID that identifies your user pool
 
@@ -15,7 +15,7 @@ export const POOL_DATA = {
 };
 ```
 
-To get this information you will navigate back to the Cognito User Pool you created.
+To get this information you will navigate to the Cognito .
 
 You should then see your Pool Id. See image below for example.
 
@@ -61,7 +61,9 @@ npm run serve
 
 ![npm run](../docs/images/dev-env-setup/cloud9-12.png)
 
-<!-- ![npm run](../docs/images/dev-env-setup/cloud9-7.png) -->
+After your development web server is started you will see a screen similar to the one below.
+
+![npm run](../docs/images/dev-env-setup/cloud9-7.png)
 
 To see your application running in the browser click the **_Preview_** tab at the top of the screen, and then select **_Preview Running Application_**. See screenshot below.
 
