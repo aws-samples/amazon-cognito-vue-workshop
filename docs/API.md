@@ -1,6 +1,6 @@
 # Configuring API Gateway endpoint Authorization
 
-In this section you walk-through how to update the API Gateway endpoints, and add Cognito authorization. This will allow your code to make calls to the API Gateway endpoints by passing the **Cognito idToken** in the **Authorization** header of the API request.
+In this section you walk-through how to update the API Gateway endpoints, and connect the Cognito authorization you created in the last section. This will allow your code to make calls to the API Gateway endpoints by passing the **Cognito token** in the **Authorization** header of the API request.
 
 Below we will briefly walk-through a code sippet of what it looks when calling the API endpoint with a Cognito idToken.
 
@@ -61,11 +61,10 @@ The following screen should now appear.
 
 ![npm run](../docs/images/api-gateway/api-5.png)
 
-3.  Next click the pencil icon next **Authorization**, and select the name of your **Cognito Authorizer**. You should see a screen similar to the one below. The name of your authorizer will be different. In this example the name of the authorizer is **cognito_authorizer**.
+3.  You should see the screen below. Next click the pencil icon next **Authorization**, and select the name of your **Cognito Authorizer** (cognito_authorizer).
+    ![npm run](../docs/images/api-gateway/api-6.png)
 
-![npm run](../docs/images/api-gateway/api-6.png)
-
-4. After you have selected your authorizer in the drop down list click the checkbox icon to save your changes.
+4.  After you have selected your authorizer in the drop down list click the checkbox icon to save your changes.
 
 ![npm run](../docs/images/api-gateway/api-7.png)
 
@@ -80,4 +79,5 @@ Next complete steps 1 through 5 for the **GET** and **POST** actions
 After you have added the Cognito authorizer to the **DELETE**, **GET**, **POST** actions for the API resource your application should now be able to communicate with the API Gateway endpoint.
 
 The last thing that you need to do is deploy the changes that have been made to the API. You will cover that in the next section.
+
 ## [Deploy API](API-Deploy.md)
