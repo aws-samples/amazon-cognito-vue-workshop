@@ -14,7 +14,7 @@ The following dialog should appear. You will then select the **Deployment stage*
 
 ![npm run](../docs/images/api-gateway/api-12.png)
 
-You will then see a screen similar to the screenshot below. The **Invoke URL** will be unique to your API Gateway endpoint. Next copy the **Invoke URL** URL value and paste it in notepad. You will update your code to reference this API endpoint URL.
+You will then see a screen similar to the screenshot below. The **Invoke URL** will be unique to your API Gateway endpoint. Next copy the **Invoke URL** value and paste it in notepad. You will update your code to reference this API endpoint URL.
 
 ![npm run](../docs/images/api-gateway/api-13.png)
 
@@ -22,7 +22,7 @@ You will then see a screen similar to the screenshot below. The **Invoke URL** w
 
 The last thing to do is update your code to point to your API Gateway endpoint you deployed.
 
-Go back to your Cloud9 code editor, and open the following file **src/store/contacts/actions.js**. Locate the following section in your source code:
+Go back to your Cloud9 code editor, and open the following file **src/store/contacts/actions.js**. Locate the following section at the top of your source code:
 
 ### Code Snippet
 
@@ -39,6 +39,6 @@ const api =
   "https://qbj694xaih.execute-api.us-east-1.amazonaws.com/prod/contact/";
 ```
 
-Be sure that you include **/contact/** after your API endpoint URL. This points to the **contact** resource on the API Gateway endpoint. After you have completed this you can restart your application if needed. Next you will test your application.
+Be sure that you include **/contact/** after your API endpoint URL. This points to the **contact** resource on the API Gateway endpoint. After you have completed this you can restart your application if needed. Next you will test all the functionality of your application.
 
 ## [Test Your Application](Testing.md)
