@@ -7,7 +7,7 @@ Once you finish this section a user will be able to sign-in with the account the
 
 ![npm run](../docs/images/sign-in.png)
 
-## Sign-in code
+## Sign-in - code snippet
 
 ```js
 // sets up Cognito User pool data
@@ -66,7 +66,7 @@ cognitoUser.authenticateUser(authDetails, {
 
 ## Adding code to file
 
-- Next copy the code from the **_Sign-in code_** section that you reviewed above.
+- Next copy the code from the **_Sign-in - code snippet_** section that you reviewed above.
 - Now open the following file **_src/components/auth/SignInForm.vue_** and locate the code snippet you see below.
 
 ```js
@@ -75,7 +75,7 @@ cognitoUser.authenticateUser(authDetails, {
 //Sign-in code ends here
 ```
 
-- Paste the sign-in code where t says **//paste code here**
+- Paste the sign-in code where it says **//paste code here**
 
 ## Milestone 2 - Testing Sign-in process
 
