@@ -1,6 +1,6 @@
 # Configuring Cognito Authorizer
 
-In this section you will setup an **Authorizer** that will enable you to control access to your APIs using Amazon Cognito. This step is needed in order for the API Gateway endpoint to recognize the Cognito idToken being passed to through header to the request.
+In this section you will setup an **Authorizer** that will enable you to control access to your APIs using Amazon Cognito. This step is needed in order for the API Gateway endpoint to recognize the Cognito token being passed through request header.
 
 ## Configure API Gateway Authorizer
 
@@ -20,7 +20,7 @@ You will now click the **Create New Authorizer** button, and the following scree
 
 ![npm run](../docs/images/authorizer/auth-3.png)
 
-Next you will fill in the information to create the **Authorizer**. You can see an example of the information to complete below.
+Next you will fill in the information to create the **Authorizer**. See the screenshot below for the values to select in the Authorizer form.
 
 ### Authorizer form explanation
 
@@ -28,11 +28,9 @@ Next you will fill in the information to create the **Authorizer**. You can see 
 
 - Since you will be using Cognito as your Authorizer you will select the **Cognito** radio button as the **type**. This will then give you different options to fill in on the form.
 
-- For the **Cognito User Pool** you will select the Cognito User Pool you created at the beginning of the workshop. This will link this **Authorizer** to that **Cognito User Pool**.
+- For the **Cognito User Pool** you will select the Cognito User Pool that was created for you. This will link the **Cognito User Pool** to **Authorizer**.
 
-  **Note**: The name of your Cognito User Pool will be the name you gave your User Pool when you created it.
-
-- For the **Token Source** you will type the word **Authorization**, since the code passes the Cognito idToken through the Authorization header in the request of your code.
+- For the **Token Source** you will type the word **Authorization**, since the code passes the Cognito token through the Authorization header in the request of your code.
 
 - Leave **Token Validation** validation blank. If you wanted you could use a regular expression to validate the token. For the sake of the demo this will be left blank.
 
@@ -43,6 +41,8 @@ Next you will fill in the information to create the **Authorizer**. You can see 
 You should then see the following screen.
 
 ![npm run](../docs/images/authorizer/auth-5.png)
+
+That wraps up creating an authorizer.
 
 ## Next Steps
 
