@@ -42,4 +42,4 @@ In this workshop we use the Vue 3 web framework to build out our SPA (Single Pag
 
 - [Get more information about Vue 3](https://v3.vuejs.org/)
 
-### [Switch to main code branch to see all documentation for workshop](https://github.com/aws-samples/amazon-cognito-vue-workshop)
+### [See all workshop documentation](https://github.com/aws-samples/amazon-cognito-vue-workshop)
